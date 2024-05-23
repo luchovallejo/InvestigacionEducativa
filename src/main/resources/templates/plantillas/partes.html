@@ -1,0 +1,16 @@
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://www.thymeleaf.org">
+    <head>
+        <title>ejemplo</title>
+        <meta charset="UTF-8">
+    </head>
+    <body>
+        <header th:fragment="cabecero">
+            <h1 th:text="#{plantilla.titulo}">APP WEB MVC CON SPRING BOOT</h1>
+        </header>
+        <footer th:fragment="pie">
+            <span th:text="#{plantilla.pie}">By: LUIS VALLEJO</span>
+            <p><a href="https://www.youtube.com/watch?v=6zfIxgaVkQI">video Spring MVC</a>
+        </footer>
+    </body>
+</html>
