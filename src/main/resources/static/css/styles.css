@@ -1,0 +1,182 @@
+/*
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/Other/CascadeStyleSheet.css to edit this template
+*/
+/* 
+    Created on : 22/05/2024, 6:59:47 p. m.
+    Author     : lucho
+*/
+*{
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    font-family: 'Poppins', sans-serif; 
+}
+
+p {
+    color: white;
+}
+
+article {
+    color: white;
+}
+
+
+
+iframe, video {
+    display: block;
+    margin: 0 auto; 
+    border-radius: 10px;
+}
+
+
+header {
+    text-align: center; 
+    padding-top: 20px; 
+}
+
+header2{
+    background-color: #0f0808ba;
+}
+
+
+header2{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 99;
+}
+
+.cab2{
+    font-size: 2em;
+    color: #fff;
+    user-select: none;
+}
+
+.cont1{
+    display: flex;
+    justify-content: center;
+}
+
+.imagen{
+    width: 460px; 
+    height: 415;
+    margin-right: 10px;
+    border-radius: 10px;
+}
+
+.imagen2{
+    width: 460px; 
+    height: 415;
+    margin-left: 10px;
+    border-radius: 10px;
+}
+
+.navigation a{
+    position: relative;
+    font-size: 1.1em;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500;
+    margin-left: 40px;
+}
+.navigation a::after{
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    width: 100%;
+    height: 3px;
+    background: #fff;
+    border-radius: 5px;
+    transform: scaleX(0);
+    transition: transform .5s;
+}
+
+.navigation a:hover:after{
+    transform-origin: left;
+    transform: scaleX(1);
+}
+
+body{
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    z-index: 2;
+}
+
+#hero{
+    min-height: 100vh;
+    position: relative;
+}
+
+body{
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: url('studio.png') no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.capa {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #0F0808;
+    opacity: 0.5;
+    mix-blend-mode: overlay;
+    pointer-events: none; 
+}
+
+.logo{
+    font-size: 2em;
+    color: #fff;
+    user-select: none;
+}
+
+section{
+    color: #fff;
+    font-size: 18px;
+    line-height: 1.5 
+}
+
+.tabla{
+    color: #fff;
+    border-radius: 10px;
+    margin: 25px 0;
+    font-size: 1em;
+    font-family: Arial, Helvetica, sans-serif;
+    min-width: 500px;
+    box-shadow: 0 0 20px rgba(0 , 0, 0, 0.15);
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.tabla thead tr{
+    background-color: rgb(24, 182, 24);
+    color: #fff;
+    text-align: middle;
+}
+
+.tabla th,
+.tabla td{
+    padding: 12px 15px;
+}
+
+.parrafo{
+    color: #fff;
+    font-size: 18px;
+    line-height: 1.5 
+}
