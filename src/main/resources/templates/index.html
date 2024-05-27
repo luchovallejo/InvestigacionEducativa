@@ -6,20 +6,31 @@ Click nbfs://nbhost/SystemFileSystem/Templates/Other/html.html to edit this temp
 <html xmlns:th="http://wwthymeleaf.org"
       xmlns="http://www.w3.org/1999/xhtml">
     <head>
-        <title>TODO supply a title</title>
+        <title>Educación de calidad</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="icon" href="school.png" type="image/x-icon">
         <link th:href="@{/css/styles.css}" rel="stylesheet"/>
     </head>
-    <body>
-        <header th:replace="plantillas/partes :: cabecero"></header>
-        <h2>Pagina de inicio 2</h2>
-        <a th:href="@{/agregar}">AGREGAR USUARIO<a/>
-        <h4>Lista de investigadores</h4>
-        <hr>
+   <body>
+            <div class="capa"></div>
+            <header2>
+                <h2 class="cab2">UDC</h2>
+                <nav class="navigation">
+                    <a th:href="@{/agregar}">AGREGAR USUARIO<a/>
+                </nav>
+            </header2>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <h2 class="logo">LISTA DE INVESTIGADORES</h2>
+        
+        <script src="script.js"></script>
         <div th:if="${usuarios != null and !usuarios.empty}">
-            <table border="1">
+            <table class="tabla">
                 <tr>
                     <th>Id_investigador</th>
                     <th>NOMBRE</th>
@@ -41,7 +52,10 @@ Click nbfs://nbhost/SystemFileSystem/Templates/Other/html.html to edit this temp
         <div th:if="${usuarios == null or usuarios.empty}">
             la lista de investigadores está vacia
         </div> <br/><hr>
-            <footer th:replace="plantillas/partes :: pie"></footer>
+        <footer th:replace="plantillas/partes :: pie">
+            <p>&copy; COPYRIGHT 2024 Luis Ángel Vallejo Rodríguez</p>
+            <a href="/contacto">EducaciónDeCalidad@gmail.com</a>
+        </footer>
     </body>
 </html>
 
